@@ -29,41 +29,37 @@
 
     <main>
       <section> 
-        <h2 class="skill">
-          <ul>
-            <li>Programming Languages: Python, C/C++, MATLAB, Julia, Simulink</li>
-            <li>Platform: Arduino, Raspberry Pi, STM32, TDA2x ADAS SoC</li>
-            <li>Software & Operation System: KiCAD, PLECS, LTSPICE, ISE Design Suite | Linux, MacOS, Windows</li>
-            <li>Code Organizing: Github, Gitlab, Jenkins</li>
-          </ul>
-        </h2>
+        <h2 class="skill">Skills</h2>
+        <h3>Programming Languages: Python, C/C++, MATLAB, Julia, Simulink</h3>
+        <h3>Platform: Arduino, Raspberry Pi, STM32, TDA2x ADAS SoC</h3>
+        <h3>Software & Operation System: KiCAD, PLECS, LTSPICE, ISE Design Suite | Linux, MacOS, Windows</h3>
 
-        <h2 class="skill"> One Project shows skills in NXP, C and Simulink<h2>
-          <h3>
-            The project asks us to build an autonomous driving electronic car. We use raspberry pi as the microcontroller. We build the electronic car model from scratch. 
-            For the hardware part, we first build the skeleton of the vehicle, including the assembly of motor, wheels and soldering firmware board. The commands for the wheels are coded in the firmware board, and we combine the commands in different orders to realize different actions of the vehicle, such as running straight line, turning around and spinning.  We use batteries to power the whole system.
-            To realize a variety of functions, we need to apply many sensors and peripherals. For example, we use ultrasound sensor to sense the distance between the vehicle and some potential obstacles, and the vehicle is required to take action if the distance is two close. We also enable the wifi communication between the remote controller and the vehicle by a WiFi module. Thus, it is possible to remote control the vehicle using the control panel. We also apply Pi camera to take pictures. These pictures will be processed by algorithm and then realize line following, color recognition and object detection.
+        <h2 class="skill"> One Project shows skills in NXP, C and Simulink</h2>
+        <h3>
+          The project asks us to build an autonomous driving electronic car. We use raspberry pi as the microcontroller. We build the electronic car model from scratch. 
+          For the hardware part, we first build the skeleton of the vehicle, including the assembly of motor, wheels and soldering firmware board. The commands for the wheels are coded in the firmware board, and we combine the commands in different orders to realize different actions of the vehicle, such as running straight line, turning around and spinning.  We use batteries to power the whole system.
+          To realize a variety of functions, we need to apply many sensors and peripherals. For example, we use ultrasound sensor to sense the distance between the vehicle and some potential obstacles, and the vehicle is required to take action if the distance is two close. We also enable the wifi communication between the remote controller and the vehicle by a WiFi module. Thus, it is possible to remote control the vehicle using the control panel. We also apply Pi camera to take pictures. These pictures will be processed by algorithm and then realize line following, color recognition and object detection.
 
-            For the software part, we first need to write functions to combine the commands to realize the actions of the vehicle. Then, to build the connection between the microcontroller and sensors, we use different protocols, such as UART, SPI, and I2C, to help the Raspberry Pi effectively receives the signal collected from sensors. With these data, we then designed algorithm and use the function from OpenCV to realize the goals. For example, with the video taken by Pi Camera, we first convert the pictures into black-and-white format. Then we divide the frame into different parts, and calculate the black pixels in each part. The weighted average of these amount will be used to judge where the car should turn. 
+          For the software part, we first need to write functions to combine the commands to realize the actions of the vehicle. Then, to build the connection between the microcontroller and sensors, we use different protocols, such as UART, SPI, and I2C, to help the Raspberry Pi effectively receives the signal collected from sensors. With these data, we then designed algorithm and use the function from OpenCV to realize the goals. For example, with the video taken by Pi Camera, we first convert the pictures into black-and-white format. Then we divide the frame into different parts, and calculate the black pixels in each part. The weighted average of these amount will be used to judge where the car should turn. 
 
-            With these parts working together, we successfully realize the function of lane keeping, traffic light detection, traffic sign recognition etc. The vehicle could either drive autonomously, or run by a remote control panel.
+          With these parts working together, we successfully realize the function of lane keeping, traffic light detection, traffic sign recognition etc. The vehicle could either drive autonomously, or run by a remote control panel.
 
-            The project is finished by a group of five, and I am the group leader. Throughout the process, I assign and prioritize the tasks according to teammates’ advantages and willingness. People familiar with coding will be in charge of algorithm design, and teammates who like soldering will do the hardware part. As all the tasks are done as expected, I would say the project is a success.
+          The project is finished by a group of five, and I am the group leader. Throughout the process, I assign and prioritize the tasks according to teammates’ advantages and willingness. People familiar with coding will be in charge of algorithm design, and teammates who like soldering will do the hardware part. As all the tasks are done as expected, I would say the project is a success.
 
-          </h3>
-        <h2 class="skill"> One Project shows skills in Raspberry Pi, Embedded Linux and Sensors <h2>
-          <h3>
-            The project asked us to build an autonoumous driving simulation, and we use NXP as the microcontroller. The project mainly focuses on the software part. What we have is the NXP microcontroller and a haptic wheel, and the haptic wheel will be used as a steering wheel to control the position of the vehicle.
+        </h3>
+        <h2 class="skill"> One Project shows skills in Raspberry Pi, Embedded Linux and Sensors </h2>
+        <h3>
+          The project asked us to build an autonoumous driving simulation, and we use NXP as the microcontroller. The project mainly focuses on the software part. What we have is the NXP microcontroller and a haptic wheel, and the haptic wheel will be used as a steering wheel to control the position of the vehicle.
 
-            For the haptic wheel, we first write a function to enable the quaduature decoding. We use this function to read the value of the angle that the wheel has turned. Also, we need to use the PWM peripheral in the microcontroller. We control the duty cycle of the PWM to control the torque exerted on the wheel. With these two peripherals, we can then control the wheel’s action to make it possible to react in the process of autonomous driving. Also, we can simulate the feedback for the haptic wheel to create a virtual world. For example, we can simulate the counter torque when the turning angle is too big with the virtual spring function, or simply stop the wheel from further turning with the virtual wall function.
+          For the haptic wheel, we first write a function to enable the quaduature decoding. We use this function to read the value of the angle that the wheel has turned. Also, we need to use the PWM peripheral in the microcontroller. We control the duty cycle of the PWM to control the torque exerted on the wheel. With these two peripherals, we can then control the wheel’s action to make it possible to react in the process of autonomous driving. Also, we can simulate the feedback for the haptic wheel to create a virtual world. For example, we can simulate the counter torque when the turning angle is too big with the virtual spring function, or simply stop the wheel from further turning with the virtual wall function.
 
-            Then for the Simulink part, we transform the axis to make it possible to control. You know the normal axis is fixed x-y axis, but we have a route that is constantly changing. Therefore, we need a axis to fit the route, like the horizontal axis should be parallel to the real-time route, and the vertical axis should be orthogonal to the real time route. With this axis, we can then get the corresponding position of the car on the road, like whether it is deviated the route. We then use the PID control. We have two loops for the PID control, the inner loop controls the position of the haptic wheel, and the output loop control the distance from the road centerline. With these methods, we can let the car autonomously driving on a freeway.
+          Then for the Simulink part, we transform the axis to make it possible to control. You know the normal axis is fixed x-y axis, but we have a route that is constantly changing. Therefore, we need a axis to fit the route, like the horizontal axis should be parallel to the real-time route, and the vertical axis should be orthogonal to the real time route. With this axis, we can then get the corresponding position of the car on the road, like whether it is deviated the route. We then use the PID control. We have two loops for the PID control, the inner loop controls the position of the haptic wheel, and the output loop control the distance from the road centerline. With these methods, we can let the car autonomously driving on a freeway.
 
-            We also introduce the CAN bus to make vehicles of all the teams on the same route. When the system start working, the car will identify whether there is a car in front of it. If the distance is less than the safe distance, then the car will slow down until things get normal. 
+          We also introduce the CAN bus to make vehicles of all the teams on the same route. When the system start working, the car will identify whether there is a car in front of it. If the distance is less than the safe distance, then the car will slow down until things get normal. 
 
-            To make the whole system works in real-time, we also made some interrupts, to help the car react quickly. 
+          To make the whole system works in real-time, we also made some interrupts, to help the car react quickly. 
 
-          </h3>
+        </h3>
 
       </section>
     </main>
