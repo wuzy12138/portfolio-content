@@ -1,0 +1,161 @@
+*{
+    box-sizing: border-box;
+}
+body{
+    font-family: Lato,Helvetica,Arial,sans-serif;
+    font-size: 16px;
+    line-height: 1.5;
+    color: white;
+    background-color: #fff;
+}
+img{
+    display: block;
+    width: 50%;
+    /* height: 50%; */
+    padding: 4px;
+    display: block;
+    max-width: 100%;
+    height: auto;
+    margin-left: auto;
+    margin-right: auto;
+    border: 0;
+}
+
+img:hover{
+    background-color: gold;
+}
+
+h1 {
+    color: white;
+    font-size: 42px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2{
+    color: white;
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+h2 figcaption{
+    font-size: 15px;
+}
+
+#banner .content h1 {
+    border: 3px solid yellow;
+    position: relative;
+    top: 50px;
+    width: 400px;
+    margin: 0 auto;
+    color: yellow;
+}
+#banner {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    height: 100%;
+    width: 100%;
+}
+
+main {
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    background-position: bottom center;
+    margin: 0 auto;
+    padding: 40px;
+    /* text-align: center; */
+    width: auto;
+    height: auto;
+    overflow: scroll;
+}
+.navigation{
+    background-image: url("../images/background.jpg");
+}
+.navigation ul{
+    font-size: 15px;
+    margin:0;
+    padding: 0;
+    text-align: center;
+}
+
+.current{
+    font-size:30px;
+    color: green;
+    font-style:italic;
+}
+a{
+    color:white;
+    transition: background-color 0.5s;
+}
+a:visited{
+    color: lightcoral;
+}
+
+a:hover{
+    /* color: orange; */
+    background-color: gold;
+}
+
+a:active{
+    color: green;
+}
+
+.work-experience{
+    padding: 4em;
+    margin-bottom: 40px;
+}
+
+.hobbies{
+    padding: 4em;
+    margin-bottom: 40px;
+}
+
+small{
+    font-size: smaller;
+}
+
+h3{
+    margin-top: 3px;
+    margin-bottom: 20px;
+}
+
+p{
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+
+figcaption{
+    color: gold;
+    text-align: center;
+    padding: 4px;
+    margin-bottom: 40px;
+}
+
+.skill{
+    padding: 2em;
+    margin-bottom: 40px;
+}
+
+h2 ul{
+    font-size: 15px;
+    text-align: left;
+    padding: 2em;
+    margin-bottom: 40px;
+}
+
+footer {
+    background-image: url("../images/background.jpg");
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    /* background-color: red; */
+    color: white;
+    text-align: center;
+}
+
