@@ -8,6 +8,7 @@ body{
     color: white;
     background-color: #fff;
 }
+
 img{
     display: block;
     width: 50%;
@@ -21,9 +22,36 @@ img{
     border: 0;
 }
 
+
+.gallery{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.gallery img{
+    border: 0px solid #ffc60a;
+    margin: 10px 10px 10px 10px;
+    width: 300px;
+}
+
+
 img:hover{
     background-color: gold;
 }
+
+
+.container{
+    display:grid;
+    grid-template-columns: 1fr 1fr 1fr;
+}
+
+#main_page{
+    grid-column: 1 / span 3;
+}
+
+
+
 
 h1 {
     color: white;
@@ -71,13 +99,26 @@ main {
     overflow: scroll;
 }
 .navigation{
+    font-family: "Sofia";
+    display: flex;
+    text-align: center;
     background-image: url("../images/background.jpg");
+    vertical-align: right;
 }
 .navigation ul{
-    font-size: 15px;
-    margin:0;
+    /* justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap; */
+    margin: 0;
     padding: 0;
     text-align: center;
+    font-size: 15px;
+    text-align: center;
+}
+
+.navigation ul li{
+    display:inline; 
+    padding-right:20px;
 }
 
 .current{
@@ -159,3 +200,13 @@ footer {
     text-align: center;
 }
 
+
+
+@keyframes fadeIn {
+    0% { opacity: 0; }
+    100% { opacity: 1; }
+}
+
+#main_photo{
+    animation: fadeIn 3s;
+}
