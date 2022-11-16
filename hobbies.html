@@ -13,12 +13,15 @@
     <meta charset="utf-8">
     <title>Hobbies</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
     <link rel="icon" href="images/wzy.ico">
     <link rel="stylesheet" href="css/html5reset.css">
     <link rel="stylesheet" href="css/style.css">
   </head>
   <body>
-    <header>
+    <div class="container">
+      <header>
         <nav class="navigation">
           <ul>
             <li><a href="./index.html">Home</a></li>
@@ -28,65 +31,81 @@
             <li><a href="./gallery.html">Gallery</a></li>
           </ul>
         </nav>
-      </header>
-    
-    <div id="banner">
-      <div class="content">
-        <h1>My Hobbies</h1>
-      </div>
-    </div>
-    
-    <main>
-        <section>
-              
-                <div class="hobbies">
-
-                    <h2>Playing Basketball</h2>
-                    <h3>
-                        You can play basketball with a playful or competitive spirit. Either way, it’s a fantastic way to gain strength, coordination, and muscular endurance. Plus, you’ll have the opportunity to be a part of a team and a larger community.
-                    </h3>
-                    <figure>
-                      <img src="./images/basketball.jpg" alt="Playing Basketball" width="200" height="200"/>
-                      <figcaption>PlayingBasketball</figcaption>
-                    </figure> 
-                </div>
-
-                <div class="hobbies">
-
-                    <h2>Traveling</h2>
-                    <h3>
-                        Travel exposes us to different cultures and ancient traditions and through these authentic encounters, we learn to embrace and celebrate both our similarities and our differences. Travel teaches us about humanity and gives us an appreciation, understanding and respect for different points of view and ways of life.
-                    </h3>
-                      <figure>
-                          <img src="./images/traveling.jpg" alt="traveling" width="200" height="200"/>
-                          <figcaption>Traveling</figcaption>
-                        </figure> 
-                </div>
-
-                <div class="hobbies">
-
-                    <h2>Fishing</h2>
-                    <h3>
-                        Fishing gives you the pleasure of self-fulfillment. When you go to fishing, you respect your outdoor environment, you learn skills, you learn to be patient, and above all, you set a goal for yourself and you try to achieve that goal, and all these activities give you a sense of fulfillment.
-                    </h3>
-                      <figure>
-                          <img src="./images/Fishing.jpg" alt="fishing" width="200" height="200"/>
-                          <figcaption>Fishing</figcaption>
-                        </figure> 
-
-                </div>
       
-        
-
-  
-
-          </section>
-    </main>
     
-    <footer>
-      <h3>Contact me: Tel: +1 734 510 3190 
-        Email: wuzy@umich.edu </h3>
-    </footer>
+        <div class="banner">
+          <a id="awesome_icon" href="https://www.linkedin.com/in/zheyuan-wu-a853b5176/"><i class="fa fa-linkedin" style="font-size:36px"></i></a>
+          <p>Zheyuan Wu</p>
+        </div>
+      </header>
+
+      <main>
               
+        <div class="hobbies">
+
+            <h1>Playing Basketball</h1>
+            <h3>
+                You can play basketball with a playful or competitive spirit. Either way, it’s a fantastic way to gain strength, coordination, and muscular endurance. Plus, you’ll have the opportunity to be a part of a team and a larger community.
+            </h3>
+            <figure>
+              <img src="./images/basketball.jpg" alt="Playing Basketball" width="200" height="200"/>
+              <figcaption>PlayingBasketball</figcaption>
+            </figure> 
+        </div>
+
+        <div class="hobbies">
+
+            <h1>Traveling</h1>
+            <h3>
+                Travel exposes us to different cultures and ancient traditions and through these authentic encounters, we learn to embrace and celebrate both our similarities and our differences. Travel teaches us about humanity and gives us an appreciation, understanding and respect for different points of view and ways of life.
+            </h3>
+              <figure>
+                  <img src="./images/traveling.jpg" alt="traveling" width="200" height="200"/>
+                  <figcaption>Traveling</figcaption>
+                </figure> 
+        </div>
+
+        <div class="hobbies">
+
+            <h1>Fishing</h1>
+            <h3>
+                Fishing gives you the pleasure of self-fulfillment. When you go to fishing, you respect your outdoor environment, you learn skills, you learn to be patient, and above all, you set a goal for yourself and you try to achieve that goal, and all these activities give you a sense of fulfillment.
+            </h3>
+              <figure>
+                  <img src="./images/Fishing.jpg" alt="fishing" width="200" height="200"/>
+                  <figcaption>Fishing</figcaption>
+                </figure> 
+
+        </div>
+      </main>
+    
+
+      <aside>
+        <form
+        action="https://formspree.io/f/mrgdoryo"
+        method="POST"
+        >
+        <label>
+          Your email:
+          <input type="email" name="email">
+        </label>
+        <br>
+        <label>
+          Your message:
+          <textarea name="message"></textarea>
+        </label>
+        <!-- your other form fields go here -->
+        <button type="submit">Send</button>
+        </form>
+      </aside>
+
+    
+      <footer>
+        <h3>Contact me: Tel: +1 734 510 3190 
+          Email: wuzy@umich.edu </h3>
+      </footer>
+           
+      
+    </div>   
   </body>
 </html>
