@@ -173,9 +173,6 @@ main {
     color: black;
     font-weight: 300%;
 }
-/* .whiteLine{
-    background-image: linear-gradient(45deg, #ff9a9e 0%, #fad0c4 99%, #fad0c4 100%);
-} */
 
 .skill {
     display: flex;
@@ -189,6 +186,46 @@ main {
     justify-content: space-between;
     flex-wrap: nowrap;
 }
+
+.skill h1{
+    font-size: 80;
+    color: black;
+    font-weight: 300%;
+}
+
+.work {
+    display: flex;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    display: flex;
+    text-align: left;
+    align-items: flex-start;
+    flex-wrap: nowrap;
+}
+.work h1{
+    font-size: 80;
+    color: black;
+    font-weight: 300%;
+
+}
+
+.projects {
+    display: flex;
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);;
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.projects h1{
+    font-size: 80;
+    color: black;
+    font-weight: 300%;
+}
+
 
 .current{
     font-size:30px;
