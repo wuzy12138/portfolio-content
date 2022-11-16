@@ -12,7 +12,6 @@
     </script>
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Sofia">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <meta charset="utf-8">
     <title>Zheyuan Wu</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="images/wzy.ico">
@@ -21,8 +20,9 @@
   </head>
   <body>
     
-    <div class="container">
-      <nav class="navigation">
+    <div class = "container">
+      
+      <nav>
         <ul>
           <li class="current"><a href="./index.html">Home</a></li>
           <li><a href="./hobbies.html">Hobbies</a></li>
@@ -31,97 +31,149 @@
           <li><a href="./gallery.html">Gallery</a></li>
         </ul>
       </nav>
-    </header>
 
-    <div id="banner">
-      <div class="content">
-        <h1>Zheyuan Wu</h1>
+      <div class="banner">
+        <a id="awesome_icon" href="https://www.linkedin.com/in/zheyuan-wu-a853b5176/"><i class="fa fa-linkedin" style="font-size:24px"></i></a>
+        <p>Zheyuan Wu</p>
       </div>
-    </div>
-    
-    <main id="main_page">
-      <section>
-        <article>
-          <i class="fa fa-quote-left fa-3x fa-pull-left fa-border" style="font-size:48px;"></i>
-          <figure>
-            <img id="main_photo" src="./images/wzy.jpg" alt="My Photo" width="100" height="150"/>
-            <figcaption>MyPhoto</figcaption>
-          </figure> 
-          <h2>About Me</h2>
-            <h3> Brief Info </h3>
-              <p>Hello, my name is Zheyuan Wu, you can also call me Mike. I am a graduate student from university of Michigan, major in electrical and computer engineering, and my concentration is the embedded systems. 
-              </p>
-            <h3>Experiences and Skills</h3> 
-              <p>
-              I have experience in some projects related to some embedded system platform, such as Arduino, raspberry pi and STM32, using C or C++ to program them. For example, I use C to program the NXP microprocessor and realize the autonomous driving simulation in the project of adaptive cruise control,. Besides that, I am also familiar with some hardware part including integrating the sensors, debugging with oscilloscope to make the sensors work well, and soldering. For example, , I use several sensors like ultrasound sensor and Pi camera to realize line following and object detection in the project building autonomous driving electronic car. 
-            
-              I am also a good team player, enjoy working with different people. In every group project, I am friendly to others and try every opportunity to communication with others. I am also good at time management and multitasking. I am able to handle the project even if there is a lot of work to do. I am also good at self-learning and am a self starter, often try to learn some new software and function on my own, such as KiCAD, PLECS, etc.            
-              </p>
-        </article>
-      </section> 
-    
-      <section>
-        <article>
-          <h2>My details</h2>
-            <h3>Education</h3>
-            <h3>University of Michigan Ann Arbor, U.S.
-                  M.S. in Electrical and Computer Engineering
-                  Aug 2021- May 2023
-            </h3>
-            <h3>
-                  "University of Nottingham Nottingham, U.K.
-                  B.S. in Electrical and Electronic Engineering
-                  Honors: Deans’ Scholarship 2017-2018, 2018-2019. Rank: Top 5%
-                  Sep 2017-Jun 2021"
-            </h3>
-
-            <h3>Experience </h3>
-            <h3>Test Engineering Intern</h3>
-            <h3>Adaptive Cruise Control</h3>
-            <h3>TI ADAS SoC Exploration</h3>
-            <h3>Speed Measurement Module</h3>
-            <h3>Autonomous Vehicle by Computer Vision</h3>
-            <h3>CV/Deep Learning Algorithm for Objects Detection</h3>
-            <h3>Skills</h3>
-
-            <h3>Programming Languages</h3>
-            <h3>Platforms</h3>
-            <h3>Software & Operation System</h3>
-            <h3>Code Organizing</h3>
-
-              
-        </article>
-
-
-        <!-- modify this form HTML and place wherever you want your form -->
-          <form
-          action="https://formspree.io/f/mrgdoryo"
-          method="POST"
-          >
-          <label>
-            Your email:
-            <input type="email" name="email">
-          </label>
-          <label>
-            Your message:
-            <textarea name="message"></textarea>
-          </label>
-          <!-- your other form fields go here -->
-          <button type="submit">Send</button>
-          </form>
-      </section> 
-        
-       
       
-         
-    </main>
     
-    <footer>
-      <h3>Contact me: 
-        Tel: +1 734 510 3190 
-        Email: wuzy@umich.edu
-      </h3>
-    </footer>
+      <main class="main_page">
+        <div class="about">
+          <h1>About Me</h1>
+          <p>
+            <img id="main_photo" src="./images/wzy.jpg" alt="My Photo" />
+            <!-- <figcaption>MyPhoto</figcaption>
+          </figure> -->
+          </p> 
+          </p>
+            My name is Zheyuan Wu, you can also call me Mike. 
+            I am a graduate student from university of Michigan, 
+            major in electrical and computer engineering, 
+            and my concentration is the embedded systems.<br><br>
+          
+            I have experience in some projects related to 
+            some embedded system platform, such as Arduino,
+            raspberry pi and STM32, using C or C++ to program 
+            them. For example, I use C to program the NXP
+            microprocessor and realize the autonomous driving 
+            simulation in the project of adaptive cruise control,. 
+            Besides that, I am also familiar with some hardware part
+            including integrating the sensors, debugging with 
+            oscilloscope to make the sensors work well, 
+            and soldering. For example, , I use several sensors 
+            like ultrasound sensor and Pi camera to realize line 
+            following and object detection in the project building 
+            autonomous driving electronic car.<br><br>
+         
+            I am also a good team player, enjoy working with different
+            people. In every group project, I am friendly to others
+            and try every opportunity to communication with others.
+            I am also good at time management and multitasking.
+            I am able to handle the project even if there is a
+            lot of work to do. I am also good at self-learning 
+            and am a self starter, often try to learn some new 
+            software and function on my own, such as KiCAD, PLECS,
+            etc.             
+          </p>
+          
+        </div>
+        
+        <!-- <div class="whiteLine">
+          <p><br><br></p>
+        </div> -->
+        <br>
+        <br>
+        <div class="education">
+          <h1>Education</h1>
+          <div class="graduate">
+            <p>Graduate Study</p>
+            <p>University of Michigan Ann Arbor, U.S <br>
+              M.S. in Electrical and Computer Engineering<br>
+              Aug 2021- May 2023
+            </p>
+          </div>
+    
+          <div class="undergraduate">
+            <p>Undergraduate Study</p>
+            <p>University of Nottingham Nottingham, U.K<br>
+              B.S. in Electrical and Electronic Engineering<br>
+              Honors: Deans’ Scholarship 2017-2018, 2018-2019<br> 
+              Rank: Top 5%<br>
+              Sep 2017-Jun 2021
+            </p>
+          </div>
+          <div class="core-course">
+            <p>Core Courses</p>
+            <p>
+              EECS 461 Embedded Control<br>
+              EECS 570 Parallel Computer Architecture<br>
+              EECS 473 Advanced Embedded Systems<br>
+              Si 539 Web Design<br>
+            </p>
+          </div>
+        </div>
+        
+        <br>
+        <br>
+
+
+        <div class="skill">
+
+        </div>
+        <section>
+          <article>
+            <h1>My details</h1>
               
+  
+              <h2>Experience </h2>
+              <h2>Test Engineering Intern</h2>
+              <h2>Adaptive Cruise Control</h2>
+              <h2>TI ADAS SoC Exploration</h2>
+              <h2>Speed Measurement Module</h2>
+              <h2>Autonomous Vehicle by Computer Vision</h2>
+              <h2>CV/Deep Learning Algorithm for Objects Detection</h2>
+              <h2>Skills</h2>
+  
+              <h2>Programming Languages</h2>
+              <h2>Platforms</h2>
+              <h2>Software & Operation System</h2>
+              <h2>Code Organizing</h2>
+  
+                
+          </article>
+  
+  
+          <!-- modify this form HTML and place wherever you want your form -->
+            <form
+            action="https://formspree.io/f/mrgdoryo"
+            method="POST"
+            >
+            <label>
+              Your email:
+              <input type="email" name="email">
+            </label>
+            <label>
+              Your message:
+              <textarea name="message"></textarea>
+            </label>
+            <!-- your other form fields go here -->
+            <button type="submit">Send</button>
+            </form>
+        </section> 
+          
+        
+        
+          
+      </main>
+      
+      <footer>
+        <h2>Contact me: 
+          Tel: +1 734 510 3190 
+          Email: wuzy@umich.edu
+        </h2>
+      </footer>     
+
+    </div>
   </body>
 </html>
