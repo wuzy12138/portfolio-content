@@ -89,7 +89,6 @@ nav li{
 }
 
 .banner p {
-    animation: fadeIn;
     position: relative;
     top: 50px;
     width: 400px;
@@ -153,12 +152,12 @@ main{
 }
 
 .about h1{
-    font-size: 80;
+    font-size: xx-large;
     color: black;
-    font-weight: 300%;
+    font-weight: 700;
 }
 .about p{
-    font-size: 40;
+    font-size: large;
 }
 .about p figcaption{
     text-align: center;
@@ -176,27 +175,32 @@ main{
     flex-wrap: nowrap; */
 }
 .education h1{
-    font-size: 80;
+    font-size: xx-large;
     color: black;
-    font-weight: 300%;
+    font-weight: 700;
 }
 
 .skill {
-    display: flex;
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);;
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    align-items: stretch;
+    /* align-items: stretch;
     align-content: space;
     justify-content: space-between;
-    flex-wrap: nowrap;
+    flex-wrap: nowrap; */
 }
 
 .skill h1{
-    font-size: 80;
+    font-size: xx-large;
     color: black;
-    font-weight: 300%;
+    font-weight: 700;
+}
+
+.skill .kinds h2{
+    font-size: x-large;
+    color: black;
+    font-weight: 500;
 }
 
 .work {
@@ -209,9 +213,9 @@ main{
     /* flex-wrap: wrap; */
 }
 .work h1{
-    font-size: 80;
+    font-size: xx-large;
     color: black;
-    font-weight: 300%;
+    font-weight: 700;
 }
 
 
@@ -226,9 +230,9 @@ main{
 }
 
 .projects h1{
-    font-size: 80;
+    font-size: xx-large;
     color: black;
-    font-weight: 300%;
+    font-weight: 700;
 }
 
 
@@ -263,9 +267,9 @@ aside{
 }
 
 .hobbies h1{
-    font-size: 80;
+    font-size: xx-large;
     color: black;
-    font-weight: 300%;
+    font-weight: 700;
 }
 
 small{
@@ -323,7 +327,6 @@ footer {
     border: 0px solid #ffc60a;
     margin: 10px 10px 10px 10px;
     width: 300px;
-    animation: fadeIn;
 }
 
 .skills {
@@ -334,9 +337,9 @@ footer {
     justify-content: space-between;
 }
 .skills h1{
-    font-size: 80;
+    font-size: xx-large;
     color: black;
-    font-weight: 300%;
+    font-weight: 700;
 }
 
 .hobbies {
@@ -347,9 +350,9 @@ footer {
     justify-content: space-between;
 }
 .hobbies h1{
-    font-size: 80;
+    font-size: xx-large;
     color: black;
-    font-weight: 300%;
+    font-weight: 700;
 }
 
 .experience{
@@ -361,9 +364,9 @@ footer {
 }
 
 .experience h1{
-    font-size: 80;
+    font-size: xx-large;
     color: black;
-    font-weight: 300%;
+    font-weight: 700;
 }
 
 @keyframes fadeIn {
@@ -375,6 +378,9 @@ footer {
 
 }
 
-@media all and (min-width: 1400px){
-  
+
+@media (prefers-reduced-motion: reduce){
+    #main_photo {
+        animation: none;
+    }
 }
