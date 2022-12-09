@@ -1,22 +1,47 @@
-
+*{
+    /* overflow:auto; */
+}
+html{
+    scroll-behavior: smooth;
+}
 
 body{
     font-family: Lato,Helvetica,Arial,sans-serif;
     font-size: 16px;
     line-height: 1.5;
     color: white;
-    background-color: #fff;
+    background-color: lightblue;
     background-image: url("../images/background.jpg");
+    max-width: 100%;
 }
 
 .container{
-    /*Your code here  */
     /* See documentation for mobile view */
     display: grid;
     grid-template-columns:1fr 5fr 1fr;
     grid-row-gap:30px;
+    max-width: 100%;
 }
-
+  
+.skip a:focus{
+    background: grey;
+    top: 0;
+    left: 0;
+    padding: 6px;
+    -webkit-transition: top 1s ease-out;
+    transition: top 1s ease-out;
+    z-index: 1;
+    position: absolute;
+}
+/*Your code here*/
+/*reference: http://nemesisdesign.net/blog/accessibility/nice-css-skip-links-appearing-focus/*/
+/*Add the selector and rule to move the skip
+link to the exact top of the page.*/
+.skip a{
+    position:absolute;
+    left:-99999px;
+    top: 0px;
+}
 
 h1{
     color: white;
@@ -38,6 +63,7 @@ a{
     color:white;
     transition: background-color 0.5s;
 }
+
 a:visited{
     color: lightcoral;
 }
@@ -135,7 +161,7 @@ main {
 main{
     grid-column: 2 / span 1;
 }
-.main_page{
+#main_page{
     grid-column: 2 / span 1;
 }
 
@@ -189,6 +215,7 @@ main{
     align-content: space;
     justify-content: space-between;
     flex-wrap: nowrap; */
+    /* flex-wrap: nowrap; */
 }
 
 .skill h1{
