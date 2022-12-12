@@ -18,7 +18,7 @@ body{
 .container{
     /* See documentation for mobile view */
     display: grid;
-    grid-template-columns:1fr 5fr 1fr;
+    grid-template-columns:1fr 1fr 1fr;
     grid-row-gap:30px;
     max-width: 100%;
 }
@@ -65,7 +65,7 @@ a{
 }
 
 a:visited{
-    color: lightcoral;
+    color: orange;
 }
 
 a:hover{
@@ -161,9 +161,9 @@ main {
 main{
     grid-column: 2 / span 1;
 }
-#main_page{
+/* #main_page{
     grid-column: 2 / span 1;
-}
+} */
 
 
 .about {
@@ -211,14 +211,10 @@ main{
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    /* align-items: stretch;
-    align-content: space;
-    justify-content: space-between;
-    flex-wrap: nowrap; */
-    /* flex-wrap: nowrap; */
 }
 
 .skill h1{
+    /* grid-row: 1; */
     font-size: xx-large;
     color: black;
     font-weight: 700;
@@ -247,7 +243,7 @@ main{
 
 
 .projects {
-    display: flex;
+    /* display: flex; */
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     color: black;
     font-family: Arial, Helvetica, sans-serif;
@@ -356,14 +352,37 @@ footer {
     width: 300px;
 }
 
-.skills {
+.skills1 {
     background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
     color: black;
     font-family: Arial, Helvetica, sans-serif;
     text-align: center;
-    justify-content: space-between;
 }
-.skills h1{
+.skills1 h1{
+    font-size: xx-large;
+    color: black;
+    font-weight: 700;
+}
+
+.skills2 {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.skills2 h1{
+    font-size: xx-large;
+    color: black;
+    font-weight: 700;
+}
+
+.skills3 {
+    background-image: linear-gradient(to top, #a18cd1 0%, #fbc2eb 100%);
+    color: black;
+    font-family: Arial, Helvetica, sans-serif;
+    text-align: center;
+}
+.skills3 h1{
     font-size: xx-large;
     color: black;
     font-weight: 700;
@@ -397,12 +416,81 @@ footer {
 }
 
 @keyframes fadeIn {
+
     0% { opacity: 0; }
     100% { opacity: 1; }
 }
 
-@media all and (min-width: 700px){
-
+@media screen and (min-width: 700px){
+    #main_index{
+        grid-column: 1 / span 3;
+        display: grid;
+        grid-template-columns: 2fr 1fr 2fr;
+        grid-row-gap: 30px;
+    }
+    .about{
+        grid-column: 1 / span 1;
+    }
+    .education{
+        /* See documentation for mobile view */
+        grid-column: 3 /  span 1;
+    }
+    .projects{
+        grid-column: 1 / span 1;
+    }
+    .skill{
+        grid-column: 3 /  span 1;
+    }
+    .work{
+        grid-column: 1 / span 3;
+    }
+    nav{
+        grid-column: 1 / span 3;
+    }
+    .skills1{
+        grid-column: 1 / span 3;
+    }
+    .skills2{
+        grid-column: 1 / span 1;
+    }
+    .skills3{
+        grid-column: 3 / span 1;
+    }
+}
+@media screen and (min-width: 1200px){
+    #main_index{
+        grid-column: 1 / span 3;
+        display: grid;
+        grid-template-columns: 4fr 1fr 4fr;
+        grid-row-gap: 20px;
+    }
+    .about{
+        grid-column: 1 / span 2;
+    }
+    .education{
+        grid-column: 2 /  span 2;
+    }
+    .projects{
+        grid-column: 1 / span 2;
+    }
+    .skill{
+        grid-column: 2 /  span 2;
+    }
+    .work{
+        grid-column: 1 / span 2;
+    }
+    nav{
+        grid-column: 1 / span 3;
+    }
+    .skills1{
+        grid-column: 1 / span 3;
+    }
+    .skills2{
+        grid-column: 1 / span 2;
+    }
+    .skills3{
+        grid-column: 2 / span 2;
+    }
 }
 
 
